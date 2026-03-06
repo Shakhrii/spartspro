@@ -14,7 +14,7 @@
       <nav class="nav">
         <a href="#">
           <div class="logo">
-            <img src="../../assets/images/logo.svg" alt="logo" class="logo" />
+            <img src="../../assets/images/logo.svg" alt="logo" class="logo">
           </div>
         </a>
         <ul class="menu-list">
@@ -26,22 +26,44 @@
         </ul>
       </nav>
     </header>
-    <section class="catalog">
-      <h2 class="catalog__title">рекомендуемое оборудование</h2>
-      <ul class="catalog-list">
-        <li class="catalog-list__item">
-          <img class="item-img" src="../../assets/images/cards/card_1.svg" alt="elevator rope" />
-          <div class="item-content">
-            <span class="item-title">Стальной канат для лифта GRS 9X21F(9Х17)-IWRC 1570</span>
-            <div class="instock">
-              <img class="instock-img" src="../../assets/images/instock.svg" alt="instock" />
-              <span class="instock-txt" >В наличии 50 м.</span>
-            </div>
-            <button class="item-btn">Подробнее</button>
+    
+    <main class="main">
+      <section class="catalog">
+        <h2 class="subtitle">рекомендуемое оборудование</h2>
+        <ul class="catalog-list"></ul>
+        <button class="btn btn-catalog">Перейти в каталог</button>
+      </section>
+
+      <section class="about-company">
+        <h2 class="subtitle">о компании</h2>
+        <div class="about-content">
+          <div class="about-images">
+            <img src="../../assets/images/about/about_1.svg" alt="company">
+            <img src="../../assets/images/about/about_2.svg" alt="company">
+            <img src="../../assets/images/about/about_3.svg" alt="company">
           </div>
-        </li>
-      </ul>
-    </section>
+          <div class="about-description">
+            <h3 class="description-title">
+              Компания «SPARTSPRO» специализируется
+              на поставках лифтового оборудования, комплектующих и запчастей 
+              для лифтов и эскалаторов ведущих мировых и российских производителей.
+            </h3>
+
+            <ul class="about-list">
+              <li class="about-list__item about-txt">Гарантия качества – работаем только с проверенными производителями.</li>
+              <li class="about-list__item about-txt">Собственный склад – более 30 000 наименований в наличии для оперативных отгрузок.</li>
+              <li class="about-list__item about-txt">Соблюдение сроков – приоритет компании: быстрая обработка заказов и доставка без задержек.</li>
+            </ul>
+
+            <span class="about-txt">
+              Мы обеспечиваем бесперебойные поставки для ваших проектов. Оставьте заявку – и получите коммерческое предложение в кратчайшие сроки!
+            </span>
+            <button class="btn btn-about">Подробнее</button>
+          </div>
+        </div>
+      </section>
+    </main>
   </div>
+  <script src="../../js/catalog.js" type="module"></script>
 </body>
 </html>
