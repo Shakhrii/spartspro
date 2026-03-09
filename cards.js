@@ -33,7 +33,7 @@ export const cards =
      {
       "title": "Купить плоский тяговый ремень для лифта GRS AAA717AJ1(8 кордов)",
       "amount": 50,
-      "image": "../../assets/images/cards/card_2.svg",
+      "image": "../../assets/images/cards/card_5.svg",
       "alt": "elevator belt" 
     }
   ]
