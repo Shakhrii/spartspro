@@ -423,7 +423,7 @@ body.menu-active {
     height: 100vh;
     right: -100vw;
     background-color: white;
-    padding: 196px 10px 196px 0;
+    padding: 10px 196px 0px 196px;
     border-top: 1px solid #EAEFF4;
   }
 
@@ -596,9 +596,7 @@ body.menu-active {
     font-family: 'OpenSans', serif;
     font-size: 16px;
     line-height: 1.5;
-    display: block;
-    overflow: visible;
-    white-space: normal;
+    -webkit-line-clamp: 4;
   }
 
   .btn-item {
