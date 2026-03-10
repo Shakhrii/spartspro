@@ -1,4 +1,7 @@
 import { cards } from "../cards.js";
+import { mobileCards } from "../cards.js";
+
+const catalogList = document.querySelector('.catalog-list');
 
 const getCard = (card) => {
   const cardItem = document.createElement('li');
@@ -43,7 +46,7 @@ const getCard = (card) => {
   instockTxt.innerText = instockTextValue;
 
   const itemBtn = document.createElement('button');
-  itemBtn.classList.add('btn');
+  itemBtn.classList.add('btn', 'btn-item');
   itemBtn.innerText = 'Подробнее';
 
   cardItem.appendChild(img);
@@ -61,9 +64,27 @@ const getCard = (card) => {
   return cardItem;
 }
 
-const catalogList = document.querySelector('.catalog-list');
-console.log(catalogList);
+const drawCards = (cards) => {
+  catalogList.replaceChildren();
 
-cards.forEach(card => {
+  cards.forEach(card => {
   catalogList.appendChild(getCard(card));
-});
+  });
+}
+
+const resizeDrawCards = () => {
+  const screenWidth = window.innerWidth;
+  if (screenWidth <= 576) {
+    drawCards(mobileCards);
+  } else {
+    drawCards(cards);
+  }
+}
+
+resizeDrawCards();
+
+const onResize = (event) => { 
+  resizeDrawCards();
+}
+
+window.addEventListener("resize", onResize);
