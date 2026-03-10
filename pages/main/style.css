@@ -68,7 +68,6 @@ body.menu-active {
   overflow: hidden;
 }
 
-
 .container {
     max-width: 1920px;
     width: 100%;
@@ -406,10 +405,6 @@ body.menu-active {
     gap: 50px;
   }
 
-  .header {
-    border-bottom: 1px solid #EAEFF4;
-  }
-
   .main {
     gap: 50px;
   }
@@ -421,14 +416,15 @@ body.menu-active {
   .menu-list {
     flex-direction: column;
     gap: 0;
-    top: 90px;
+    top: 80px;
     align-items: start;
     position: fixed;
     width: 100vw;
     height: 100vh;
     right: -100vw;
     background-color: white;
-    padding: 0 196px;
+    padding: 196px 10px 196px 0;
+    border-top: 1px solid #EAEFF4;
   }
 
   .menu-list__item {
