@@ -15,15 +15,15 @@ const menuClickHandler = () => {
 function handleScreenChange(event) {
   if (event.matches) {
     elements.forEach(element => {
-    element.addEventListener('click', menuClickHandler);
-});
+      element.addEventListener('click', menuClickHandler);
+    });
   } else {
     menu.classList.remove('menu-active');
     menuBtn.classList.remove('menu-active');
     body.classList.remove('menu-active');
     elements.forEach(element => {
-    element.removeEventListener('click', menuClickHandler);
-});
+      element.removeEventListener('click', menuClickHandler);
+    });
   }
 }
 
