@@ -576,7 +576,6 @@ h2, h3 {
   .catalog-list__item {
     flex-direction: column;
     justify-content: stretch;
-    width: 170px;
     height: 373px;
   }
 
