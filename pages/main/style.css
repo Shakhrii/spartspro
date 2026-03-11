@@ -154,6 +154,7 @@ h2, h3 {
   letter-spacing: 0;
   text-transform: uppercase;
   transition: color .3s ease;
+  box-sizing: border-box;
 }
 
 .menu-list__item:hover {
@@ -437,6 +438,7 @@ h2, h3 {
 
   .menu-list__item {
     width: 100%;
+    height: 64px;
     padding: 20px 0px;
     border-bottom: 1px solid #D5DFE9;
   }
@@ -490,7 +492,7 @@ h2, h3 {
   }
 
   .menu-list {
-    padding: 0 96px;
+    padding: 10px 96px 0px;
   }
 
   .subtitle {
@@ -557,7 +559,7 @@ h2, h3 {
   }
 
   .menu-list {
-    padding: 0 108px;
+    padding: 10px 108px 0px;
   }
 
   .catalog {
@@ -663,7 +665,7 @@ h2, h3 {
   }
 
   .menu-list {
-    padding: 0 15px;
+    padding: 10px 15px 0px;
   }
 
   .catalog {
