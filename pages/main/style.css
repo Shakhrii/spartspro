@@ -107,7 +107,6 @@ h2, h3 {
   width: 50px;
   height: 50px;
   gap: 6px;
-  padding: 14px 16px 13px 16px;
   border-radius: 8px;
   border: 1px solid var(--main-color);
   cursor: pointer;
@@ -116,7 +115,7 @@ h2, h3 {
 
 .menu-burger__btn span {
   display: block;
-  width: 100%;
+  width: 23px;
   height: 2px;
   background-color: var(--main-color);
 }
@@ -124,7 +123,6 @@ h2, h3 {
 .menu-burger__btn.menu-active span:nth-child(1) {
     position: absolute;
     transform: rotate(45deg);
-    width: 16px;
 }
 
 .menu-burger__btn.menu-active span:nth-child(2) {
@@ -134,7 +132,6 @@ h2, h3 {
 .menu-burger__btn.menu-active span:nth-child(3) {
     position: absolute;
     transform: rotate(-45deg);
-    width: 16px;
 }
 
 
@@ -167,7 +164,6 @@ h2, h3 {
   display: flex;
   flex-direction: column;
   margin-bottom: 50px;
-  gap: 80px;
 }
 
 .catalog {
@@ -383,7 +379,11 @@ h2, h3 {
     padding: 0 clamp(15px, 9.722vw, 140px);
   } 
 
-   .about-images {
+  .main {
+    gap: 80px;
+  }
+
+  .about-images {
     gap: 0;
     column-gap: 26.45px;
   }
@@ -541,10 +541,15 @@ h2, h3 {
     padding: 0 clamp(15px, 18.75vw, 108px);
   }
 
+  .logo {
+    width: 185px;
+    height: 80px;
+  }
+
   .menu-burger__btn {
     width: 46px;
     height: 46px;
-    padding: 12px 14px 11px 14px  ;
+    padding: 0;
   }
 
   .subtitle {
